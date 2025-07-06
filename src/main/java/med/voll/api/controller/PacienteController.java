@@ -1,7 +1,7 @@
 package med.voll.api.controller;
 
 
-import med.voll.paciente.DatosResgistroPaciente;
+import med.voll.api.paciente.DatosResgistroPaciente;
 import org.springframework.web.bind.annotation.*;
 
 
