@@ -1,6 +1,18 @@
 package med.voll.api.paciente;
 
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
 import med.voll.api.direccion.DatosDireccion;
 
-public record DatosResgistroPaciente(String nombre, String email, String telefono, String documento, DatosDireccion direccion) {
+public record DatosResgistroPaciente(
+        @NotBlank String nombre,
+        @NotBlank @Email String email,
+        @NotBlank String telefono,
+        @NotBlank @Pattern(regexp = "\\d{7,9}") String documento,
+        @NotNull @Valid DatosDireccion direccion
+
+) {
 }
