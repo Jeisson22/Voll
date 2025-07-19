@@ -10,6 +10,7 @@ import med.voll.api.direccion.DatosDireccion;
 public record DatosRegistroMedico(
         @NotBlank String nombre,
         @NotBlank @Email String email,
+        @NotBlank String telefono,
         @NotBlank  @Pattern(regexp = "\\d{8}") String documento,
         // Notblanck no sirver pára tipo de dato enum
         // solo Notblanck con string
