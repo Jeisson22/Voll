@@ -40,4 +40,10 @@ public class MedicoController {
         return repository.findAll(paginacion).map(DatosListaMedico::new);
     }
 
+
+    @Transactional
+    @PutMapping
+    public void actualizar(@RequestBody @Valid DatosRegistroMedico datos){
+
+    }
 }
