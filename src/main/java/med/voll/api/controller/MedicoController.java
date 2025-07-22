@@ -46,4 +46,10 @@ public class MedicoController {
         // Ahora tenemos que crear un metodo para actualizar medico
         medico.actualizarInformaciones(datos);
     }
+
+    @Transactional
+    @DeleteMapping("/{id}")
+    public void  eliminar(@PathVariable  Long id){
+        repository.deleteById(id);
+    }
 }
