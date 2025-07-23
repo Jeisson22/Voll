@@ -27,14 +27,14 @@ public class MedicoController {
 
     }
 
-    @GetMapping
+
     // cambia el list por page
     /*public List<DatosListaMedico> listar(Pageable  paginacion){
        return repository.findAll(paginacion).stream().map(DatosListaMedico::new).toList();
     }*/
-
+    @GetMapping
     public Page<DatosListaMedico> listar(@PageableDefault(size=10, sort = {"nombre"}) Pageable  paginacion){
-        return repository.findAllByActiveTrue(paginacion).map(DatosListaMedico::new);
+        return repository.findAllByActivoTrue(paginacion).map(DatosListaMedico::new);
     }
 
 
