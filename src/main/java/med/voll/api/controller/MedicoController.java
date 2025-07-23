@@ -54,4 +54,8 @@ public class MedicoController {
        medico.eliminar();
 
     }
+
+
+    // SPRING BOOT 3
+    // donde se agrego algunas depedencias
 }
