@@ -72,6 +72,16 @@ public class MedicoController {
     }
 
 
+
+    @GetMapping("/{id}")
+    public ResponseEntity  detallar(@PathVariable  Long id){
+        var medico = repository.getReferenceById(id);
+
+
+        return ResponseEntity.ok( new DatosDetallesMedico(medico));
+    }
+
+
     // SPRING BOOT 3
     // donde se agrego algunas depedencias
 }
