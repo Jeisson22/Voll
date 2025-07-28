@@ -15,4 +15,6 @@ public record DatosListaMedico(
                 medico.getDocumento(),
                 medico.getEspecialidad());
     }
+
+
 }

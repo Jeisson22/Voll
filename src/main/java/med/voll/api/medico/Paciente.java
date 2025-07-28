@@ -34,7 +34,7 @@ public class Paciente {
     private String email;
 
     // Documento de identidad del paciente
-    private String documento_identidad;
+    private String documento;
 
     // Teléfono del paciente
     private String telefono;
@@ -52,7 +52,7 @@ public class Paciente {
         // Asigna el teléfono recibido desde el DTO
         this.telefono = datos.telefono();
         // Asigna el documento de identidad recibido desde el DTO
-        this.documento_identidad = datos.documento_identidad();
+        this.documento = datos.documento();
         // Crea una nueva dirección a partir de los datos del DTO
         this.direccion = new Direccion(datos.direccion());
     }
