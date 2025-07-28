@@ -15,9 +15,9 @@ public record DatosDetallesMedico(
     public DatosDetallesMedico (Medico medico){
         this( medico.getId(),
                 medico.getNombre(),
-                medico.getNombre(),
                 medico.getEmail(),
                 medico.getDocumento(),
+                medico.getTelefono(),
                 medico.getEspecialidad(),
                 medico.getDireccion());
     }
