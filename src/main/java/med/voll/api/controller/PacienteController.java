@@ -2,11 +2,10 @@ package med.voll.api.controller;
 
 
 import jakarta.validation.Valid;
-import med.voll.api.medico.DatosListaMedico;
-import med.voll.api.medico.DatosListaPaciente;
-import med.voll.api.medico.Paciente;
-import med.voll.api.medico.PacienteRepository;
-import med.voll.api.paciente.DatosResgistroPaciente;
+import med.voll.api.domain.medico.DatosListaPaciente;
+import med.voll.api.domain.medico.Paciente;
+import med.voll.api.domain.medico.PacienteRepository;
+import med.voll.api.domain.paciente.DatosResgistroPaciente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;

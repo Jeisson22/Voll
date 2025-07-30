@@ -1,4 +1,4 @@
-package med.voll.api.medico;
+package med.voll.api.domain.medico;
 
 
 import jakarta.persistence.*;
@@ -6,10 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import med.voll.api.direccion.Direccion;
-import med.voll.api.paciente.DatosResgistroPaciente;
-
-import java.awt.*;
+import med.voll.api.domain.direccion.Direccion;
+import med.voll.api.domain.paciente.DatosResgistroPaciente;
 
 
 // Importa las anotaciones de Lombok y JPA necesarias
